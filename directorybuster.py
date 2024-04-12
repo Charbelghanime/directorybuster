@@ -29,7 +29,8 @@ display_header()
 
 def ensure_scheme(url):
     """Ensures that the URL has a scheme (e.g., http://)"""
-    if not urlparse(url).scheme:
+    parsed_url = urlparse(url)
+    if not parsed_url.scheme:
         return "http://" + url
     return url
 
@@ -56,7 +57,7 @@ def brute_force(base_url, wordlist, status_codes, timeout):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Customizable web directory brute-forcing tool")
     parser.add_argument("base_url", help="Base URL of the target website")
-    parser.add_argument("-w", "--wordlist", help="Path to the wordlist file", required=True)
+    parser.add_argument("-w", "--wordlist", help="Path to the wordlist file", default="/usr/share/wordlists/dirb/common.txt")
     parser.add_argument("-c", "--status-codes", help="Comma-separated list of valid status codes to test (e.g., 200,301)", type=lambda s: [int(item) for item in s.split(",")], default=[200, 301, 302, 400, 403, 500, 502])
     parser.add_argument("-t", "--timeout", help="Timeout duration for HTTP requests (in seconds)", type=float, default=1)
     args = parser.parse_args()

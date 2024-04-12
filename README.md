@@ -20,7 +20,7 @@ To have all the requirements installed use:<br>
 To access the help manual: <br>
 <br>
 ``` python3 directorybuster.py -h```<br>
-or <br>
+or
 <br>
 ```python3 directorybuster.py --help ```<br>
 To perform a simple scan use:<br>

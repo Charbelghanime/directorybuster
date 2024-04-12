@@ -37,6 +37,7 @@ Other example: <br>
 ```python3 directorybuster.py example.com -c 200,301,302 -w /usr/share/wordlists/dirb/big.txt```<br>
 <br>
 In this example we are using the tool to show only status codes:200,301,302 and we are using the wordlist:``` /usr/share/wordlists/dirb/big.txt``` <br>
+<br>
 For more options and detailed usage instructions, refer to the help manual: <br>
 <br>
 ``` python3 directorybuster.py -h```<br>

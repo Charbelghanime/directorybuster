@@ -17,20 +17,26 @@ After successful installation use: <br>
 To have all the requirements installed use:<br>
 <br>
 ```pip install -r requirements.txt``` <br>
+<br>
 To access the help manual: <br>
 <br>
 ``` python3 directorybuster.py -h```<br>
 or
 <br>
 ```python3 directorybuster.py --help ```<br>
+<br>
 To perform a simple scan use:<br>
 <br>
 ```python3 directorybuster.py example.com``` <br>
+<br>
 In the example above, directorybuster.py will automatically use the wordlist ```/usr/share/wordlists/dirb/common.txt```<br>
 and will show the default status codes: 200, 301, 302, 400, 403, 500, 502. <br>
+<br>
 Other example: <br>
 <br>
 ```python3 directorybuster.py example.com -c 200,301,302 -w /usr/share/wordlists/dirb/big.txt```<br>
+<br>
 In this example we are using the tool to show only status codes:200,301,302 and we are using the wordlist:``` /usr/share/wordlists/dirb/big.txt``` <br>
 For more options and detailed usage instructions, refer to the help manual: <br>
+<br>
 ``` python3 directorybuster.py -h```<br>

@@ -42,3 +42,8 @@ In this example we are using the tool to show only status codes:200,301,302 and 
 For more options and detailed usage instructions, refer to the help manual: <br>
 <br>
 ``` python3 directorybuster.py -h```<br>
+<br>
+Contributions to Directory Buster are welcome! If you encounter bugs, have suggestions for new features, or want to contribute improvements, please open an issue or submit a pull request on the GitHub repository.
+<br>
+<br>
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -11,7 +11,9 @@ It performs HTTP GET requests to the specified target website and checks the res
 <br>
 To start use: <br> ```git clone https://github.com/Charbelghanime/directorybuster.git```
 <br>
+<br>
 After successful installation use: <br>
+<br>
 ```cd directorybuster ```<br>
 <br>
 To have all the requirements installed use:<br>

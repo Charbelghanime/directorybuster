@@ -61,7 +61,7 @@ if __name__ == "__main__":
     parser.add_argument("-t", "--timeout", help="Timeout duration for HTTP requests (in seconds)", type=float, default=1)
     args = parser.parse_args()
 
-    with open(args.wordlist, "r") as f:
+    with open(args.wordlist, "r", encoding="utf-8", errors="ignore") as f:
         wordlist = [line.strip() for line in f]
 
     brute_force(args.base_url, wordlist, args.status_codes, args.timeout)
